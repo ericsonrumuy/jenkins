@@ -4,7 +4,7 @@ pipeline {
     stage('Build') {
       steps {
         sh '/etc/profile.d/maven.sh'
-        sh 'mvn --version'
+        sh 'mvn --version > /home/jenkins/tes'
       }
     }
   }
